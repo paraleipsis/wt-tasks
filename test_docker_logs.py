@@ -58,6 +58,10 @@ async def test_logs_out():
 
 @pytest.mark.asyncio
 async def test_stream_logs():
+    """
+    Checking the stream output of logs from several lines.
+    """
+    
     iterations_amount = 5
     test_string = 'test'
     sh_test = ' '.join(f'{i}' for i in range(1, iterations_amount+1))
